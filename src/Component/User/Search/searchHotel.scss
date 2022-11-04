@@ -1,0 +1,17 @@
+.searchWrap {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+
+    .filter {
+        flex: 1;
+        border-radius: 10px;
+        position: sticky;
+        top: 10px;
+        height: max-content;
+    }
+
+    .listResult {
+        flex: 3;
+    }
+}

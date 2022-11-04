@@ -1,0 +1,80 @@
+.sidebar{
+    flex: 1;
+    border: 1px solid lightgray;
+    height: max-content;
+    padding: 10px;
+    .check{
+        display: flex;
+        margin-top: 15px;
+        gap: 30px;
+        .in{
+            border-right: 1px solid lightgray;
+            padding-right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .out{
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        // justify-content: space-between;
+    }
+    .days{
+        margin-top: 15px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid lightgray;
+    }
+    .rooms{
+        margin-top: 15px;
+    }
+}
+.pricebar{
+    flex:1;
+    border: 1px solid lightgray;
+    margin-top: 10px;
+    height: max-content;
+    .price{
+        display: flex;
+        justify-content: space-between;
+        background-color: #e3f2fd;
+        padding: 10px;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+    }
+    .tax{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .amount{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+.pay{
+    flex: 1;
+    border: 1px solid lightgray;
+    margin-top: 10px;
+    height: max-content;
+    .option{
+        padding: 10px;
+        background-color: #e3f2fd;
+        border-bottom: 1px solid lightgray;
+    }
+    .online{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:0 10px;
+        border-bottom: 1px solid lightgray;
+    }
+    .off{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 10px;
+    }
+}

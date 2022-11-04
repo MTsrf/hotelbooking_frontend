@@ -1,0 +1,25 @@
+.category_head{
+    max-width: 1600px;
+    width: 100%;
+    margin: auto;
+    margin-top: 25px;
+    background-color: #fff;
+
+    .tab_one{
+        padding: 50px 40px 50px;
+        border: 1px solid #000;
+        display: flex;
+        justify-content: space-around;
+        overflow: hidden;
+    }
+    .input_category{
+        width: 300px;
+    }
+    .input_category_one{
+        width: 700px;
+    }
+    .img_two{
+        border: 1px solid #000;
+        width: 200px;
+    }
+}

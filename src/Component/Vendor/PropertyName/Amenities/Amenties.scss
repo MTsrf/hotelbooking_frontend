@@ -1,0 +1,58 @@
+.amenties_main{
+    padding-bottom: 20px;
+    .amenties_head{
+        background-color: #e8eaf6;
+        padding: 20px;
+    }
+    .amenties_table{
+        padding: 30px;
+    }
+    .ameniteies_features{
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 20px;
+
+        .paper{
+            width: 24%;
+            .heading{
+                padding: 15px;
+                background-color: #e8eaf6;
+            }
+            .input_field{
+                padding: 20px;
+            }
+        }
+    }
+    .services{
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+        .first-division{
+            margin-bottom: 15px;
+            width: 80%;
+        }
+        .second-division{
+            border: 1px solid #717aab;
+            height: 45px;
+            background-color: #e8eaf6;
+            width: 10%;
+            border-radius: 10%;
+            .addicon{
+                margin-top: 6px;
+                margin-left: 4px;
+            }
+        }
+        .third-division{
+            border: 1px solid #717aab;
+            height: 45px;
+            background-color: #e8eaf6;
+            width: 10%;
+            border-radius: 10%;
+            .remove-btn{
+                margin-top: 6px;
+                margin-left: 4px;
+            }
+        }
+    }
+
+}

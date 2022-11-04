@@ -1,0 +1,31 @@
+.vendor_home{
+    background-image: url("../../../../public/Images/vendor/vendor_banner.jpg");
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 2% 24%;
+    
+}
+.grid_vendor_home{
+    padding-top: 150px;
+}
+
+
+.card_vendor_login{
+    max-width: 400px;
+    margin:"auto";
+    padding: 30px;
+    transition: "0.3s";
+    box-shadow: "0 8px 40px -12px rgba(0,0,0,0.3)";
+}
+.grid_vendor_content{
+    padding-top: 300px;
+    color: #fff;
+
+}
+#password-helper-text{
+    color: red;
+}
+#email-helper-text{
+    color: red;
+}

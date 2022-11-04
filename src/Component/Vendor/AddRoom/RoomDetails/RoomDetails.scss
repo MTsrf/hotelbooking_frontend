@@ -1,0 +1,99 @@
+.room_choose{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+    .first_Paper{
+        width: 50%;
+        .heading{
+            padding: 20px 10px;
+            background-color: #e8eaf6;
+            font-weight: bold !important;
+        }
+        .select{
+            padding: 30px 40px 30px 30px;
+        }
+    }
+    .second_Paper{
+        width: 50%;
+        .heading{
+            padding: 20px 10px;
+            background-color: #e8eaf6;
+            font-weight: bold !important;
+        }
+        .select{
+            padding: 30px 40px 30px 30px;
+        }
+    }
+}
+.room_details_main{
+    display: flex;
+    gap: 30px;
+    .first_Paper{
+        width: 50%;
+        .heading{
+            padding: 20px 10px;
+            background-color: #e8eaf6;
+            font-weight: bold !important;
+        }
+        .first_box{
+            padding: 20px;
+            .second_paper{
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-between;
+                .text{
+                    width: 30%;
+                    font-weight: bold;
+                    margin-top: 5px;
+                }
+                .input_field{
+                    width: 70%;
+                }
+                .radio{
+                    width: 70%;
+                }
+            }
+        
+        }
+    }
+
+    .Second_Paper{
+        width: 50%;
+        .heading{
+            padding: 20px 10px;
+            background-color: #e8eaf6;
+            font-weight: bold !important;
+        }
+        .second_box{
+            padding: 20px 20px;
+            .second_paper{
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-between;
+    
+                .text{
+                    width: 30%;
+                    font-weight: bold;
+                    margin-top: 5px;
+                }
+                .input_field{
+                    width: 70%;
+                }
+                .text2{
+                    margin-top: 30px;
+                    font-weight: bold !important;
+
+                }
+                .box_time{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 70%;
+                    overflow: hidden;
+                }
+               
+                
+            }
+        }
+        
+    }
+}

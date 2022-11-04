@@ -1,0 +1,24 @@
+.formAddress{
+    background-color: #e3f2fd;
+    border: 1px solid lightgray;
+    padding: 20px;
+    margin-top: 20px;
+    .first{
+        margin-top: 20px;
+        .name{
+            display: flex;
+            gap: 20px;
+            .input{
+                border: 1px solid lightgray;
+            }
+        }
+        .email{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .input{
+                border:  1px solid lightgray;
+            }
+        }
+    }
+}

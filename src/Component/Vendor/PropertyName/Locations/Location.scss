@@ -1,0 +1,21 @@
+.address_header{
+    padding: 50px 20px 50px 30px;
+    .header_box_address{
+        width: 50%;
+    }
+    .heading_address{
+        margin-bottom: 30px;
+        background-color: #e8eaf6;
+    }
+    .address_sub{
+        margin-bottom: 20px;
+    }
+    .address_subi{
+        display: flex;
+        gap: 10px;
+    }
+    .address_line{
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}

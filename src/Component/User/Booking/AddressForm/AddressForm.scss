@@ -1,0 +1,39 @@
+.addressForm{
+    background-color: #e3f2fd;
+    border: 1px solid lightgray;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+    .first{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .breakfast{
+            display: flex;
+            gap: 15px;
+        }
+        .smok{
+            display: flex;
+            gap: 15px;
+        }
+        .view{
+            display: flex;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+    }
+    .second{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+       
+    }
+    .fourth{
+        display: flex;
+        gap: 40px;
+    }
+    
+}

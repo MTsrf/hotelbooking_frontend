@@ -1,0 +1,51 @@
+.MainPaper{
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    border-radius: 10px;
+    background-color: rgb(250, 249, 246) !important;
+    .firstPosterMain{
+        width: 100%;
+        max-width: 1330px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0px 30px 0px;
+        gap: 30px;
+        .firstBox{
+            width: 40%;
+            padding: 50px 0px;
+            .mid{
+                text-transform: uppercase;
+                font-weight: bold;
+                color: rgb(44, 43, 43);
+                font-size: 18px;
+                font-family: var(--font-family);
+            }
+            .head{
+                color: #e1be5b;
+                font-weight: bold;
+                font-size: 30px;
+                font-family: var(--font-family);
+            }
+            .last{
+                color: var(--light-black);
+                
+            }
+            
+        }
+        .secondBox{
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            .bannerBox{
+                display: flex;
+                justify-content: space-between;
+                gap: 15px;
+                .cardBox{
+                    max-width: 250px;
+                    width: 100%;
+                }
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.activate-account{
+    margin-top: 5rem;
+    padding: 10px;
+    .logo{
+        background-color: #3b5998;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+    .content{
+        margin-top: 30px;
+        border-top: 1px solid rgb(174, 173, 173);
+        border-bottom: 1px solid rgb(174, 173, 173);
+    }
+    .content-text{
+        margin-top: 10px;
+    }
+    .button{
+        margin-top: 10px;
+        padding: 10px;
+        color: #fff;
+        background-color: #3b5998;
+        margin-bottom: 10px;
+    }
+    .button:hover{
+        background-color: #3b5998 !important;
+    }
+    .text{
+        margin-bottom: 30px;
+        color: rgb(174, 173, 173);
+    }
+    .MuiAlert-standardError{
+        margin-top: 20px;
+    }
+}

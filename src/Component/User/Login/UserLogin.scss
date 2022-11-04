@@ -1,0 +1,83 @@
+/* .dailog_user_login{
+    max-width: 400px;
+    margin:"auto";
+    padding: 30px;
+    transition: "0.3s";
+    box-shadow: "0 8px 40px -12px rgba(0,0,0,0.3)";
+} */
+
+.login_modal_red {
+    border: 1px solid red;
+}
+.dialogBox{
+    overflow: hidden;
+}
+
+.verificationForm {
+    display: grid;
+    place-items: center;
+    gap: 40px;
+
+    .secondBox {
+        display: grid;
+        place-items: center;
+        gap: 30px;
+        
+        .thirdBox{
+            display: grid;
+            place-items: center;
+            gap: 5px;
+            .otp {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+                width: 100%;
+                align-items: center;
+    
+                .inputStyle {
+                    width: 50% !important;
+                    height: 45px;
+                    border-radius: 5px;
+                    border: 1px solid #000;
+                    margin-left: 8px;
+                    margin-right: 8px;
+                    font-size: 20px;
+                }
+                .errorStyle{
+                    width: 50% !important;
+                    height: 45px;
+                    border-radius: 5px;
+                    border: 1px solid red;
+                    margin-left: 8px;
+                    margin-right: 8px;
+                    font-size: 20px;
+                }
+                
+            }
+            .error{
+                color: red;
+                font-size: 11px;
+            }
+        }
+
+        
+        
+
+        .btn {
+            color: white;
+            width: 100%;
+            font-size: 20px;
+            font-weight: 600;
+            padding: 15px 150px;
+            border: 0px;
+            background: #1565c0;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.addressBox{
+    
+}

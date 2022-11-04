@@ -1,0 +1,50 @@
+.sliderBox{
+    background-color: rgb(250, 249, 246);
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+    .firstBox{
+        .smallContainer{
+            border-bottom: 1px solid lightgray;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+            padding-left: 40px;
+        }
+        .slidershow{
+            max-width: 1350px;
+            width: 100%;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            .cardBox{
+                max-width: 322px;
+                width: 100%;
+                margin: auto;
+                
+
+            }
+            .slick-prev{
+                color: black;
+                &:before{
+                    color: black; 
+                } 
+            }
+            .slick-arrow{
+                width: 40px;
+                height: 40px;
+                padding-bottom: 8px;
+                border-radius: 50%;
+                background-color: white;
+                z-index: 100;
+                box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+            }
+        }
+    }
+}
+

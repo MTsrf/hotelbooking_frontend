@@ -1,0 +1,39 @@
+.css-sb7697-MuiPaper-root-MuiAppBar-root{
+    box-shadow: none !important;
+}
+.navbarBox{
+    .navbarContainer{
+        width: 100%;
+        max-width: 1430px;
+        margin: auto;
+        .logo{
+            z-index: 10000;
+            width: 30px;
+        }
+        .thirdBox{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            .fourBox{
+                .userInfo{
+                    border: none;
+                    padding: 8px;
+                    width: 140px;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 5px;
+                    // background:linear-gradient(90deg, rgba(3,36,73,1) 7%, rgba(6,57,112,0.8155637254901961) 100%);
+                    .avatar{
+                        width: 28px;
+                        height: 28px;
+                    }
+                    .name{
+                        margin-left: 10px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
