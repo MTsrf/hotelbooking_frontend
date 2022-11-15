@@ -40,8 +40,8 @@ export const mainListItems = (
       <ListItemIcon>
       <DashboardIcon style={{color:'#0076d7'}}/>
       </ListItemIcon>
-      <Link className='decoration-changes' to={'/vendor/home/hotel'}>
-      <ListItemText primary="Booking Slots" />
+      <Link className='decoration-changes' to={'/vendor/home/booked'}>
+      <ListItemText primary="Booking List"/>
       </Link>
     </ListItemButton>
    

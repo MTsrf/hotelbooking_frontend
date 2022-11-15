@@ -1,0 +1,57 @@
+.DataModel {
+    max-width: 1600px;
+    width: 100%;
+    margin: auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    .heading-section {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    .search {
+        margin: 20px;
+        width: 400px;
+        float: right;
+
+        .bar {
+            border: 1px solid black;
+            width: 100%;
+        }
+    }
+
+    .table {
+        border: 1px solid black;
+
+        .button {
+            .btn-row {
+                display: flex;
+                gap: 5px;
+
+                .first {
+                    border: 2px solid red;
+                    padding: 10px;
+                    cursor: pointer;
+                    font-weight: bold;
+                    border-radius: 3px;
+                }
+
+                .second {
+                    border: 2px solid #2196f3;
+                    cursor: pointer;
+                    padding: 10px;
+                    font-weight: bold;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+
+    .page-Box {
+        padding: 10px;
+        display: flex;
+        justify-content: right;
+    }
+}

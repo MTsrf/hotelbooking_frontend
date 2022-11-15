@@ -12,6 +12,9 @@ import CategoryPage from '../../../Pages/Admin/CategoryPage';
 import { useDispatch } from 'react-redux'
 import Vendor from '../VendorDetails/Vendor'
 import { ADMIN_LOGOUT } from '../../../redux/types';
+import AllBooking from '../../../Pages/Admin/AllBooking';
+import AllUsers from '../../../Pages/Admin/AllUsers';
+import AllHotel from '../../../Pages/Admin/AllHotel';
 
 const drawerWidth = 240;
 const AppBar = styled(MuiAppBar, {
@@ -65,8 +68,8 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
 const mdTheme = createTheme();
 const Dashboard = () => {
     const dispatch = useDispatch()
-    const handleLogout = () =>{
-        dispatch({ type:ADMIN_LOGOUT});
+    const handleLogout = () => {
+        dispatch({ type: ADMIN_LOGOUT });
     }
 
     const [open, setOpen] = useState(true)
@@ -152,11 +155,12 @@ const Dashboard = () => {
                     >
                         <Toolbar />
                         <Routes>
-                            
+
                             <Route path='/category' element={<CategoryPage />} />
-                            <Route exact path='/provider' element={<Vendor/>} />
-                            {/* <Route path='/track' element={<Track />} />
-                            <Route path='/slot' element={<Booking />} /> */}
+                            <Route exact path='/provider' element={<Vendor />} />
+                            <Route path='/all-booking' element={<AllBooking />} />
+                            <Route path='/users' element={<AllUsers />} />
+                            <Route path='/hotel' element={<AllHotel />} />
                         </Routes>
                     </Box>
                 </Box>

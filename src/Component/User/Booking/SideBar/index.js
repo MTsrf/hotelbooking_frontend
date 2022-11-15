@@ -1,6 +1,6 @@
 import { Alert, Box, Button, Checkbox, Typography } from '@mui/material'
 import axiosInstance from '../../../../helper/axiosInstance'
-import { RadioButton } from '../../syledcomponent/StyledComponent'
+import { RadioButton } from '../../../syledcomponent/StyledComponent'
 import './SideBar.scss'
 
 

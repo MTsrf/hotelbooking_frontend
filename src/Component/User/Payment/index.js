@@ -88,7 +88,7 @@ const Payment = () => {
                     if(success){
                         setTimeout(()=>{
                             setResponse("")
-                            navigate("/")
+                            navigate("/my-book")
                         },4000)
                     }
                 } catch (error) {
@@ -121,16 +121,16 @@ const Payment = () => {
             displayRazorpay()
         } else {
             try {
-                let { data:{success} } = await axiosInstance.post("/complete", { checkout, rooms, pay }, {
+                let { data:{success,receipt} } = await axiosInstance.post("/complete", { checkout, rooms, pay }, {
                     headers: {
                         Authorization: `Bearer ${user.authData.token}`,
                         "content-type": "multipart/form-data",
                     }
                 })
-                setResponse("Your Booking Successfully")
+                setResponse(receipt)
                 setTimeout(()=>{
                     setResponse("")
-                    navigate("/")
+                    navigate("/my-book")
                 },4000)
             } catch (error) {
                 setError(error.message)
@@ -162,7 +162,7 @@ const Payment = () => {
                                 <CircularProgress />
                             </Box>
                             <Box className="text">
-                                <Typography sx={{ fontWeight: 'bold', fontSize: '20px', color: '#4caf50' }}>Payment Successfully Completed</Typography>
+                                <Typography sx={{ fontWeight: 'bold', fontSize: '20px', color: '#4caf50' }}>Booking Successfully Completed</Typography>
                                 <Box>
                                     <Typography>{`Your receipt Id:${response}`}</Typography>
                                 </Box>

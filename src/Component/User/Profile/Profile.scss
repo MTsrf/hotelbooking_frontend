@@ -1,3 +1,65 @@
 .profile-main{
-    margin-top: 40px !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    .avatar-side{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px;
+        gap: 5px;
+        border-radius: 10px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        .logout{
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            align-items: center;
+            padding: 10px;
+            cursor: pointer;
+        }
+    }
+    .details{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        .title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .name{
+            margin-top: 30px;
+            padding: 20px 0px;
+            display: flex;
+            gap: 150px;
+            border-bottom: 1px solid lightgray;
+        }
+        .email{
+            padding: 20px 0px;
+            display: flex;
+            gap: 147px;
+            border-bottom: 1px solid lightgray;
+        }
+        .phone{
+            padding: 20px 0px;
+            display: flex;
+            gap: 75px;
+
+        }
+        .gender{
+            padding: 20px 0px;
+            display: flex;
+            gap: 130px;
+            border-bottom: 1px solid lightgray;
+        }
+        .place{
+            padding: 20px 0px;
+            display: flex;
+            gap: 147px;
+        }
+    }
 }

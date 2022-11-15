@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import axiosInstance from '../../../helper/axiosInstance';
 import { USER_VERIFY } from '../../../redux/types';
-import { Btn } from '../syledcomponent/StyledComponent';
+import { Btn } from '../../syledcomponent/StyledComponent';
 
 const VerifyOtp = ({setOpenForm,setOpenVerify}) => {
     const { dumb } = useSelector((dumb)=>({...dumb}))

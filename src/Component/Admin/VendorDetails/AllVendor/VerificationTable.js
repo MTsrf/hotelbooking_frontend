@@ -1,10 +1,10 @@
 import { Alert, Button, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material'
 import React from 'react'
-
+import Empty from '../../../Empty'
 const VerificationTable = ({ verified, handleApprove, message }) => {
     return (
         <React.Fragment>
-            <TableContainer component={Paper}>
+            {verified.length ? <TableContainer component={Paper}>
                 {
                     message && <Alert severity='success'>{message}</Alert>
                 }
@@ -50,7 +50,7 @@ const VerificationTable = ({ verified, handleApprove, message }) => {
                         ))}
                     </TableBody>
                 </Table>
-            </TableContainer>
+            </TableContainer>:<Empty type="list"/>}
         </React.Fragment>
     )
 }

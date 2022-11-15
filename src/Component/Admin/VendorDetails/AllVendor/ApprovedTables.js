@@ -1,11 +1,12 @@
 import { Alert, Button, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material'
 import React from 'react'
+import Empty from '../../../Empty'
 
 
 const ApprovedTables = ({provider,handleBlocked,bmessage,handleUnblock}) => {
     return (
         <>
-            <TableContainer component={Paper}>
+            {provider.length?<TableContainer component={Paper}>
                 {
                     bmessage && <Alert severity='success'>{bmessage}</Alert>
                 }
@@ -54,7 +55,7 @@ const ApprovedTables = ({provider,handleBlocked,bmessage,handleUnblock}) => {
                         ))}
                     </TableBody>
                 </Table>
-            </TableContainer>
+            </TableContainer>:<Empty type="list"/>}
         </>
     )
 }

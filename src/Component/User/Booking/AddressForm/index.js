@@ -6,7 +6,7 @@ import CameraswitchOutlinedIcon from '@mui/icons-material/CameraswitchOutlined';
 import './AddressForm.scss'
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
-import { Inp, Select } from "../../syledcomponent/StyledComponent";
+import { Inp, Select } from "../../../syledcomponent/StyledComponent";
 import { Form, Formik, ErrorMessage } from 'formik'
 
 const AddressForm = ({
@@ -101,6 +101,7 @@ const AddressForm = ({
                                         }
                                     </Box>
                                 </Box>
+
                             </Form>
                         )
                     }

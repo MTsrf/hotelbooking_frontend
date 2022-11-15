@@ -7,4 +7,21 @@ const axiosInstance = axios.create({
     }
 })
 
+axiosInstance.interceptors.response.use(
+    function (response) {
+        return response;
+    },
+    function (error) {
+        if (error.response.status === 401 && error.response.data.vendorBlocked) {
+            localStorage.removeItem("vendor")
+            window.location.href = "/vendor"
+        } else if (error.response.status === 401 && error.response.data.userBlocked) {
+            localStorage.removeItem("user")
+            window.location.href = "/"
+        } else {
+            return Promise.reject(error)
+        }
+    }
+);
+
 export default axiosInstance

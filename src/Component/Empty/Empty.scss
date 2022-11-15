@@ -1,0 +1,14 @@
+.empty-main{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 30px;
+    .bucket{
+        width: 250px;
+        
+    }
+}

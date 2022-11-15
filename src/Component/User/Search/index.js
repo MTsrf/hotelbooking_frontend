@@ -27,9 +27,9 @@ const SearchHotel = () => {
         <>
             <Box className="containerBox">
                 <Box className="searchWrap">
-                    <Box className="filter">
+                    {/* <Box className="filter">
                         <Filter />
-                    </Box>
+                    </Box> */}
                     <Box className="listResult">
                         {
                             search?.map((item) => (

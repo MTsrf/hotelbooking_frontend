@@ -11,7 +11,7 @@ import { mainListItems } from './ListItem/LIstItem';
 import Home from '../Home/index'
 import PropertyName from '../PropertyName';
 import AddRoom from '../AddRoom';
-
+import BookedPage from '../../../Pages/Vendor/BookedPage'
 
 const drawerWidth = 240;
 const AppBar = styled(MuiAppBar, {
@@ -150,6 +150,7 @@ const MainLayout = () => {
                     <Route path='/' element={<Home/>} />
                     <Route path='/property' element={<PropertyName/>} />
                     <Route path='/room' element={<AddRoom />} />
+                    <Route path='/booked' element={<BookedPage/>}/>
                     {/* <Route path='/hotel' element={<Booking />} /> */}
                 </Routes>
             </Box>

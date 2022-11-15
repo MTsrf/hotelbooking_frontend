@@ -1,0 +1,408 @@
+.bookingFied {
+    padding: 20px;
+    height: 60px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 170px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+    @media screen and (max-width: 1000px) {
+        border-radius: 0px;
+        padding: 0;
+        height: 0;
+    }
+
+    .headerSearch {
+        height: 50px;
+        border: 1px solid lightgray;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 5px;
+        width: 100%;
+        max-width: 1330px;
+        padding-left: 10px;
+        margin: auto;
+
+        @media screen and (max-width: 1000px) {
+            display: flex;
+            flex-direction: column;
+            border: none;
+            border-radius: 0;
+            padding: 0;
+            height: max-content;
+        }
+
+        .headerSearchItem {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            @media screen and (max-width: 1000px) {
+                width: 91%;
+                border: 2px solid black;
+                display: flex;
+                padding: 20px;
+                background-color: white;
+
+            }
+
+            .date {
+                position: absolute;
+                top: 75px;
+                left: 500px;
+                box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+
+                @media screen and (max-width: 1000px) {
+                    position: absolute;
+                    top: 140px;
+                    left: 15px;
+                    width: 95%;
+                    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+                }
+            }
+
+            .headerIcon {
+                color: lightgray;
+            }
+
+            .headerSearchInput {
+                border: none;
+                outline: none;
+                max-width: 200px !important;
+
+                .opt {
+                    width: 200px;
+                    height: 80px !important;
+                    padding: 20px !important;
+                }
+            }
+
+            .headerSearchText {
+                color: lightgray;
+            }
+
+            .options {
+                z-index: 2;
+                position: absolute;
+                top: 75px;
+                background-color: white;
+                padding: 10px;
+                color: gray;
+                left: 850px;
+                border-radius: 5px;
+                -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+                box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+
+                .optionItem {
+                    width: 300px;
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 10px;
+                    font-size: 15px;
+
+                    .optionCounter {
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+                        font-size: 15px;
+                        color: black;
+                        border: 1px solid #000;
+
+                        .optionCounterButton {
+                            background-color: #fff;
+                            font-weight: bold;
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+                @media screen and (max-width: 1000px) {
+                    position: absolute;
+                    top: 205px;
+                    left: 10px;
+                    width: 90%;
+                    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+                }
+            }
+        }
+
+        .headerSearchItemSelect {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            @media screen and (max-width: 1000px) {
+                width: 91%;
+                border: 2px solid black;
+                display: flex;
+                padding: 4px 20px;
+                background-color: white;
+
+            }
+
+            .headerIcon {
+                color: lightgray;
+            }
+
+            .headerSearchInput {
+                border: none;
+                outline: none;
+                max-width: 200px !important;
+
+                .opt {
+                    width: 200px;
+                    height: 50px !important;
+                    padding: 20px !important;
+                }
+            }
+        }
+
+        .headerSearchItemButton {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            @media screen and (max-width: 1000px) {
+                width: 91%;
+                border: 2px solid black;
+                display: flex;
+                background-color: white;
+                padding: 0 20px;
+            }
+
+            .headerBtn {
+                @media screen and (max-width: 1000px) {
+                    border: 2px solid black;
+                    display: flex;
+                    width: 100%;
+                    display: block;
+
+                }
+            }
+        }
+
+
+
+    }
+}
+
+.bookingFied2 {
+    padding: 20px;
+    height: 60px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: #e8eaf6 !important;
+
+    @media screen and (max-width: 1000px) {
+        border-radius: 0px;
+        padding: 0;
+        height: 0;
+    }
+
+    .headerSearch {
+        height: 50px;
+        border: 1px solid lightgray;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 5px;
+        width: 100%;
+        max-width: 1330px;
+        padding-left: 10px;
+        margin: auto;
+        background-color: white;
+
+        @media screen and (max-width: 1000px) {
+            display: flex;
+            flex-direction: column;
+            border: none;
+            border-radius: 0;
+            padding: 0;
+            height: max-content;
+        }
+
+
+        .headerSearchItem {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            @media screen and (max-width: 1000px) {
+                width: 91%;
+                border: 2px solid black;
+                display: flex;
+                padding: 20px;
+                background-color: white;
+
+            }
+
+            @media screen and (max-width: 500px) {
+                width: 85%;
+                border: 2px solid black;
+                display: flex;
+                padding: 20px;
+                background-color: white;
+
+            }
+
+
+            .date {
+                position: absolute;
+                top: 75px;
+                left: 500px;
+                box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+
+                @media screen and (max-width: 1000px) {
+                    position: absolute;
+                    top: 140px;
+                    left: 15px;
+                    width: 95%;
+                    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+                }
+            }
+
+            .headerIcon {
+                color: lightgray;
+            }
+
+            .headerSearchInput {
+                border: none;
+                outline: none;
+                max-width: 200px !important;
+
+                .opt {
+                    width: 200px;
+                    height: 80px !important;
+                    padding: 20px !important;
+                }
+            }
+
+            .headerSearchText {
+                color: lightgray;
+            }
+
+            .options {
+                z-index: 2;
+                position: absolute;
+                top: 75px;
+                background-color: white;
+                padding: 10px;
+                color: gray;
+                left: 850px;
+                border-radius: 5px;
+                -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+                box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+
+                .optionItem {
+                    width: 300px;
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 10px;
+                    font-size: 15px;
+
+                    .optionCounter {
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+                        font-size: 15px;
+                        color: black;
+                        border: 1px solid #000;
+
+                        .optionCounterButton {
+                            background-color: #fff;
+                            font-weight: bold;
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+                @media screen and (max-width: 1000px) {
+                    position: absolute;
+                    top: 205px;
+                    left: 10px;
+                    width: 94%;
+                    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+                }
+            }
+        }
+
+        .headerSearchItemSelect {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            @media screen and (max-width: 1000px) {
+                width: 91%;
+                border: 2px solid black;
+                display: flex;
+                padding: 4px 20px;
+                background-color: white;
+
+            }
+
+            @media screen and (max-width: 500px) {
+                width: 85%;
+                border: 2px solid black;
+                display: flex;
+                padding: 4px 20px;
+                background-color: white;
+
+            }
+
+            .headerIcon {
+                color: lightgray;
+            }
+
+            .headerSearchInput {
+                border: none;
+                outline: none;
+                max-width: 200px !important;
+
+                .opt {
+                    width: 200px;
+                    height: 50px !important;
+                    padding: 20px !important;
+                }
+            }
+        }
+
+        .headerSearchItemButton {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            @media screen and (max-width: 1000px) {
+                width: 91%;
+                border: 2px solid black;
+                display: flex;
+                background-color: white;
+                padding: 0 20px;
+            }
+
+            @media screen and (max-width: 500px) {
+                width: 85%;
+                border: 2px solid black;
+                display: flex;
+                background-color: white;
+                padding: 0 20px;
+            }
+
+            .headerBtn {
+                @media screen and (max-width: 1000px) {
+                    border: 2px solid black;
+                    display: flex;
+                    width: 100%;
+                    display: block;
+
+                }
+            }
+        }
+
+
+
+    }
+}

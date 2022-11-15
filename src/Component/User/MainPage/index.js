@@ -13,10 +13,10 @@ import useFetch from '../../../helper/useFetch'
 const Main = () => {
   const dispatch = useDispatch()
   const { data, error, loading } = useFetch('/getRoom')
-  useEffect(()=>{
-    dispatch({type:PRODUCTS_DATA,payload:data})
-    localStorage.setItem('store',JSON.stringify(data))
-  },[data])
+  useEffect(() => {
+    dispatch({ type: PRODUCTS_DATA, payload: data })
+    localStorage.setItem('store', JSON.stringify(data))
+  }, [data])
   // useEffect(()=>{
   //   getAllData()
   //   console.log("ddfdsssss");
@@ -30,22 +30,22 @@ const Main = () => {
   //   dispatch({type:PRODUCTS_DATA,payload:data})
   //   localStorage.setItem('store',JSON.stringify(data))
   //   setLoading(false)
-    
+
   // }
 
- 
+
   return (
     <Fragment>
       <Box className='mainpage_box'>
         <Box className='containerBox'>
           <Box className='secondBox'>
-            { data && <FirstPoster data={data} loading={loading}/>}
-          </Box> 
+            <FirstPoster data={data} loading={loading} />
+          </Box>
           <Box className='thirdBox'>
-            {data && <SliderItems data={data} loading={loading}/>}
-          </Box> 
+            <SliderItems data={data} loading={loading} />
+          </Box>
           <Box className='thirdBox' >
-            {data && <HomeStay data={data} loading={loading}/>}
+            <HomeStay data={data} loading={loading} />
           </Box>
         </Box>
       </Box>

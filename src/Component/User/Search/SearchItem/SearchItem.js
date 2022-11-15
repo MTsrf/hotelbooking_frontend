@@ -28,12 +28,14 @@ const SearchItem = ({item}) => {
                     <Typography className="siFeatures"> Entire studio • 1 bathroom • 21m² 1 full bed</Typography>
                     <Typography className='siCancelOp'>Free cancellation</Typography>
                     <Typography className='siCancelOpSubtitle'>You can cancel later, so lock in this great price today!</Typography>
+                    <Typography sx={{fontSize:'10px',fontWeight:'bold',color:'red'}}>{`Only ${item.roomNumbers} rooms left at this hotel`}</Typography>
                 </Box>
                 <Box className="siDetails">
-                    {/* <Box className="siRating">
-                        <Typography className='text'>Excellent</Typography>
-                        <Button className='btn'>8.9</Button>
-                    </Box> */}
+                    <Box className="siRating">
+                        <Typography></Typography>
+                        {/* <Typography className='text'>Excellent</Typography>
+                        <Button className='btn'>8.9</Button> */}
+                    </Box>
                     <Box className="siDetailTexts">
                         <Typography className="siPrice">₹ {days*item.price*options.room }</Typography>
                         <Typography className="siTaxOp">Includes taxes and fees</Typography>

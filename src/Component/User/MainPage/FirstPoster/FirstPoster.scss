@@ -1,8 +1,13 @@
-.MainPaper{
+.MainPaper {
     box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
     border-radius: 10px;
     background-color: rgb(250, 249, 246) !important;
-    .firstPosterMain{
+
+    @media screen and (max-width: 1000px) {
+        margin-top: 130px;
+    }
+
+    .firstPosterMain {
         width: 100%;
         max-width: 1330px;
         margin: auto;
@@ -10,42 +15,111 @@
         justify-content: space-between;
         padding: 20px 0px 30px 0px;
         gap: 30px;
-        .firstBox{
+
+        @media screen and (max-width: 878px) {
+            width: 100%;
+            max-width: 700px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px 0px 30px 0px;
+            gap: 10px;
+        }
+
+        @media screen and (max-width: 425px) {
+            width: 100%;
+            max-width: 400px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px 0px 30px 0px;
+            gap: 10px;
+        }
+
+        .firstBox {
             width: 40%;
             padding: 50px 0px;
-            .mid{
+
+            @media screen and (max-width: 878px) {
+                width: auto
+            }
+
+            @media screen and (max-width: 425px) {
+                width: auto;
+                padding: 10px 20px;
+            }
+
+            .mid {
                 text-transform: uppercase;
                 font-weight: bold;
                 color: rgb(44, 43, 43);
                 font-size: 18px;
                 font-family: var(--font-family);
             }
-            .head{
+
+            .head {
                 color: #e1be5b;
                 font-weight: bold;
                 font-size: 30px;
                 font-family: var(--font-family);
             }
-            .last{
+
+            .last {
                 color: var(--light-black);
-                
+
             }
-            
+
         }
-        .secondBox{
+
+        .secondBox {
             display: flex;
             justify-content: space-between;
             gap: 15px;
-            .bannerBox{
+
+            @media screen and (max-width: 900px) {
+                display: flex;
+                flex-direction: column !important;
+            }
+
+            .bannerBox {
                 display: flex;
                 justify-content: space-between;
                 gap: 15px;
-                .cardBox{
+
+                @media screen and (max-width: 800px) {
+                    display: flex;
+                    flex-direction: column !important;
+                    align-items: center;
+                }
+
+                .cardBox {
                     max-width: 250px;
                     width: 100%;
+
+                    @media screen and (max-width: 900px) {
+                        width: 100%;
+                        max-width: 500px !important;
+                    }
                 }
             }
-            
+
         }
     }
+
+
+
 }
+
+// @media screen and (max-width:768px) {
+//     .firstPosterMain {
+//         width: 100%;
+//         max-width: 800px;
+//         margin: auto;
+//         display: flex;
+//         justify-content: space-between;
+//         padding: 20px 0px 30px 0px;
+//         gap: 30px;
+//     }
+// }

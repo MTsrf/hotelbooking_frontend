@@ -13,5 +13,9 @@
 
     .listResult {
         flex: 3;
+
+        @media screen and (max-width: 1000px) {
+            margin-top: 280px;
+        }
     }
 }

@@ -1,7 +1,7 @@
 import { FormControl, FormControlLabel, FormLabel, Radio, RadioGroup, Typography } from "@mui/material"
 import { Box } from "@mui/system"
 import React, { useState } from "react"
-import { Input } from '../../syledcomponent/StyledComponent'
+import { Input } from '../../../syledcomponent/StyledComponent'
 import './Form.scss'
 
 

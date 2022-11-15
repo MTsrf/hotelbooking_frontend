@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import { Route, Routes} from 'react-router-dom'
+import BookingList from '../Pages/User/BookingList'
 import BookingPage from '../Pages/User/BookingPage'
 import PaymentPage from '../Pages/User/PaymentPage'
 import ProfilePage from '../Pages/User/ProfilePage'
@@ -20,6 +21,7 @@ const UserRoutes = () => {
             <Route path='/booking/:id' element={<BookingPage/>}/>
             <Route path='/payment/:rooms/:checkout' element={<PaymentPage/>}/>
             <Route path='/profile' element={<ProfilePage/>}/>
+            <Route path='/my-book' element={<BookingList/>}/>
         </Routes>
     </Fragment>
   )

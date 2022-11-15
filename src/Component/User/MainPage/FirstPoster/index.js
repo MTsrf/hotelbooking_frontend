@@ -6,7 +6,7 @@ import './FirstPoster.scss'
 import { useNavigate } from 'react-router-dom';
 import useFetch from '../../../../helper/useFetch';
 
-const FirstPoster = ({ data,loading }) => {
+const FirstPoster = ({ data, loading }) => {
     const navigate = useNavigate()
     const store = useSelector((state) => state.store)
     const featured = store ? store : data
@@ -27,68 +27,65 @@ const FirstPoster = ({ data,loading }) => {
                     </Box>
                 </Box>
                 <Box className='secondBox'>
+
+                    {loading && <Box className='bannerBox'>
                         {
-                            loading ? (
-                                <Box className='bannerBox'>
-                                    {
-                                        count.map((item, index) => (
-                                            <Box key={index}>
-                                                <Card className='cardBox'>
-                                                    <Skeleton sx={{ height: 160, width: 250 }} animation="wave" variant="rectangular" />
-                                                    <CardContent>
-                                                        <Skeleton
-                                                            animation="wave"
-                                                            height={10}
-                                                            width="50%"
-                                                            style={{ marginBottom: 6 }}
-                                                        />
-                                                        <Skeleton
-                                                            animation="wave"
-                                                            height={10}
-                                                            width="80%"
-                                                            style={{ marginBottom: 6 }}
-                                                        />
-                                                    </CardContent>
-
-                                                </Card>
-                                            </Box>
-                                        ))
-                                    }
-                                </Box>
-                            ) : (<Box className='bannerBox'>
-                                {randomvalue?.map((item, index) => (
-                                    <Box key={index}>
-                                        <Card className='cardBox' onClick={() => { navigate(`/hotel/${item._id}`) }}>
-                                            <CardMedia
-                                                component="img"
-                                                height="160"
-                                                image={item.images[0][0].url}
-                                                alt="green iguana"
+                            count.map((item, index) => (
+                                <Box key={index}>
+                                    <Card className='cardBox'>
+                                        <Skeleton sx={{ height: 160, width: 250 }} animation="wave" variant="rectangular" />
+                                        <CardContent>
+                                            <Skeleton
+                                                animation="wave"
+                                                height={10}
+                                                width="50%"
+                                                style={{ marginBottom: 6 }}
                                             />
-                                            <CardContent>
-                                                <Typography gutterBottom variant="h7">
-                                                    {`${item?.property?.property_name.substring(0,20)} ...`}
-                                                </Typography>
-                                                <Typography variant="body2" color="text.secondary">
-                                                    {item.property.city}
+                                            <Skeleton
+                                                animation="wave"
+                                                height={10}
+                                                width="80%"
+                                                style={{ marginBottom: 6 }}
+                                            />
+                                        </CardContent>
 
-                                                </Typography>
-                                            </CardContent>
-
-                                        </Card>
-                                    </Box>))}
-                            </Box>
-                            )
-
+                                    </Card>
+                                </Box>
+                            ))
                         }
+                    </Box>}
+                    {randomvalue && <Box className='bannerBox'>
+                        {randomvalue?.map((item, index) => (
+                            <Box key={index}>
+                                <Card className='cardBox' onClick={() => { navigate(`/hotel/${item._id}`) }}>
+                                    <CardMedia
+                                        component="img"
+                                        height="160"
+                                        image={item.images[0][0].url}
+                                        alt="green iguana"
+                                    />
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h7">
+                                            {`${item?.property?.property_name.substring(0, 20)} ...`}
+                                        </Typography>
+                                        <Typography variant="body2" color="text.secondary">
+                                            {item.property.city}
+
+                                        </Typography>
+                                    </CardContent>
+
+                                </Card>
+                            </Box>))}
+                    </Box>}
+
                 </Box>
             </Box>
 
-        </Paper>
+        </Paper >
     )
 }
 
-  {/* {randomvalue.map((item, index) => (
+{/* {randomvalue.map((item, index) => (
                             <Box key={index}>
                                 <Card className='cardBox'>
                                    <CardMedia

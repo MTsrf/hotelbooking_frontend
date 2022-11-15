@@ -1,0 +1,16 @@
+.buttonEdit{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+.content{
+    .second{
+        display: flex;
+        gap: 20px ;
+        align-items: center;
+    }
+}

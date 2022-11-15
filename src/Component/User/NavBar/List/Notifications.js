@@ -20,7 +20,7 @@ const Notifications = ({onLogout}) => {
                             <Typography className='text1'>Manage your profile,Booking list,login details and password</Typography>
                         </Box>
                     </Box>
-                    <Box className='trip'>
+                    <Box className='trip' onClick={()=>{navigate("/my-book")}}>
                         <CardTravelOutlinedIcon className='icon'/>
                         <Box>
                             <Typography className='text'>My Booking</Typography>

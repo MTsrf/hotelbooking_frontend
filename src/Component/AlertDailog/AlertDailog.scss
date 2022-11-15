@@ -1,0 +1,30 @@
+.alertBox{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+    min-height: 228px;
+    width: 500px;
+    border-radius: 5px;
+    .containerAlert{
+        max-width: 300px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+    }
+    .buttonAlert{
+        padding: 20px;
+        position: fixed;
+        bottom: 0%;
+        right: 0%;
+        display: flex;
+        gap: 10px;
+    }
+}
